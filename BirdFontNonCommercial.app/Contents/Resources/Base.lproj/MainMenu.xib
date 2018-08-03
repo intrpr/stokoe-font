@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="11201"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WindowController">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+        <customObject id="2QR-cE-ytv" customClass="WindowController">
+            <connections>
+                <outlet property="bfWindow" destination="pdh-5R-qgv" id="8qw-5x-lXT"/>
+            </connections>
+        </customObject>
+        <customObject id="dgc-T8-J0n" customClass="AppDelegate"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="BirdFont" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="BirdFont" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About BirdFont" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="New Window" id="DiH-a3-CUG" userLabel="object">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="new_window:" target="dgc-T8-J0n" id="6yy-Ta-zRp"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide BirdFont" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit BirdFont" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="116" y="74"/>
+        </menu>
+        <window title="BirdFont" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="pdh-5R-qgv">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="786" height="530"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="Dz0-0d-ztu">
+                <rect key="frame" x="0.0" y="0.0" width="786" height="530"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyO-7I-knP" customClass="ToolboxCanvas">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="530"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="212" id="8Qa-wU-q1C"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="dhA-XJ-UWD"/>
+                        </constraints>
+                    </view>
+                    <view misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbj-O2-WNU" customClass="TabContent">
+                        <rect key="frame" x="212" y="-1" width="573" height="493"/>
+                        <subviews>
+                            <webView misplaced="YES" maintainsBackForwardList="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd3-eW-5KO" customClass="WebCanvas">
+                                <rect key="frame" x="0.0" y="0.0" width="573" height="493"/>
+                                <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                    <nil key="identifier"/>
+                                </webPreferences>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Cd3-eW-5KO" secondAttribute="bottom" id="2ug-zb-N4g"/>
+                            <constraint firstItem="Cd3-eW-5KO" firstAttribute="leading" secondItem="rbj-O2-WNU" secondAttribute="leading" id="LZa-GR-d5P"/>
+                            <constraint firstItem="Cd3-eW-5KO" firstAttribute="leading" secondItem="rbj-O2-WNU" secondAttribute="leading" id="Ofc-ZB-KEu"/>
+                            <constraint firstAttribute="trailing" secondItem="Cd3-eW-5KO" secondAttribute="trailing" constant="-25" id="aW9-EI-tif"/>
+                            <constraint firstItem="Cd3-eW-5KO" firstAttribute="top" secondItem="rbj-O2-WNU" secondAttribute="top" id="sOb-pt-Uuu"/>
+                            <constraint firstItem="Cd3-eW-5KO" firstAttribute="top" secondItem="rbj-O2-WNU" secondAttribute="top" id="tri-QG-3bF"/>
+                        </constraints>
+                    </view>
+                    <view misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-7L-iCn" customClass="TabBar">
+                        <rect key="frame" x="213" y="492" width="575" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="Dxf-B0-ZcV"/>
+                            <constraint firstAttribute="height" constant="38" id="NLn-9o-rq7"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="mts-FU-U9a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rbj-O2-WNU" secondAttribute="bottom" constant="-1" id="0ZS-w3-cl2"/>
+                    <constraint firstItem="oyO-7I-knP" firstAttribute="top" secondItem="Dz0-0d-ztu" secondAttribute="top" id="32V-gc-nH1"/>
+                    <constraint firstItem="rbj-O2-WNU" firstAttribute="leading" secondItem="Dz0-0d-ztu" secondAttribute="leading" constant="212" id="6H4-0O-UK7"/>
+                    <constraint firstAttribute="bottom" secondItem="oyO-7I-knP" secondAttribute="bottom" id="G0W-eI-CMI"/>
+                    <constraint firstItem="rbj-O2-WNU" firstAttribute="leading" secondItem="oyO-7I-knP" secondAttribute="trailing" id="H4t-5B-2SZ"/>
+                    <constraint firstItem="JpN-7L-iCn" firstAttribute="leading" secondItem="Dz0-0d-ztu" secondAttribute="leading" constant="212" id="H8A-k2-qh0"/>
+                    <constraint firstItem="rbj-O2-WNU" firstAttribute="top" secondItem="JpN-7L-iCn" secondAttribute="bottom" id="Ldn-tE-kbN"/>
+                    <constraint firstAttribute="trailing" secondItem="JpN-7L-iCn" secondAttribute="trailing" id="Pei-30-w16"/>
+                    <constraint firstItem="JpN-7L-iCn" firstAttribute="top" secondItem="Dz0-0d-ztu" secondAttribute="top" id="Qci-37-t3S"/>
+                    <constraint firstItem="oyO-7I-knP" firstAttribute="top" secondItem="Dz0-0d-ztu" secondAttribute="top" id="ZqX-40-fAp"/>
+                    <constraint firstItem="oyO-7I-knP" firstAttribute="leading" secondItem="Dz0-0d-ztu" secondAttribute="leading" id="cuH-xd-iLU"/>
+                    <constraint firstItem="JpN-7L-iCn" firstAttribute="top" secondItem="Dz0-0d-ztu" secondAttribute="top" id="gdB-yq-8QF"/>
+                    <constraint firstItem="rbj-O2-WNU" firstAttribute="top" secondItem="JpN-7L-iCn" secondAttribute="bottom" id="hGe-Ti-Ad2"/>
+                    <constraint firstItem="JpN-7L-iCn" firstAttribute="leading" secondItem="Dz0-0d-ztu" secondAttribute="leading" constant="213" id="i0y-Mz-ovk"/>
+                    <constraint firstItem="oyO-7I-knP" firstAttribute="bottom" secondItem="Dz0-0d-ztu" secondAttribute="bottom" id="p1Z-Qx-26m"/>
+                    <constraint firstAttribute="trailing" secondItem="rbj-O2-WNU" secondAttribute="trailing" id="z9n-qm-T9b"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="622" y="352"/>
+        </window>
+    </objects>
+</document>
