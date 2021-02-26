@@ -8,8 +8,8 @@ Update 2021-02-26: This appears to be a typeface called Upright Gothic. Appears 
 <hr>
 ## Stokoe samples
 Unique figures: 
-slash-zero (similar to &#x00D8; but using a zero, not an O)
-flat/straight top 3 (https://www.fontshop.com/people/stephen-coles/fontlists/flat-top-threes)
+- slash-zero (similar to &#x00D8; but using a zero, not an O)
+- flat/straight top 3 (https://www.fontshop.com/people/stephen-coles/fontlists/flat-top-threes)
 
 
 <img src="https://i.pinimg.com/736x/2a/1d/32/2a1d3205fb163d52b0323164e1f5a531.jpg">
