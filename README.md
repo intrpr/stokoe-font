@@ -5,6 +5,16 @@ These letters look like they were made from an architectural tracing template.
 
 Update 2021-02-26: This appears to be a typeface called Upright Gothic. Appears to have roots in 1910s? 1940s? 1960s? engineering architectural lettering templates with any combination of the words 'vertical' (vs. 'slanted') 'single-stroke' 'mechanical' 'single line' 'commercial' 'gothic' 'capitals'
 
+<hr>
+## Stokoe samples
+Unique figures: 
+slash-zero (similar to &#x00D8; but using a zero, not an O)
+flat/straight top 3 (https://www.fontshop.com/people/stephen-coles/fontlists/flat-top-threes)
+
+
+<img src="https://i.pinimg.com/736x/2a/1d/32/2a1d3205fb163d52b0323164e1f5a531.jpg">
+<img src="https://cultura-sorda.org/wp-content/uploads/2015/07/Diccionario_Stokoe_1965_Figura-1.png">
+
 ## Links, presentations, images, et al.
 
 **French, T. E. & Meiklejohn, R. (The Ohio State University)(1912). The essentials of lettering: A manual for students and designers. New York: McGraw Hill. 3rd ed.
@@ -38,7 +48,3 @@ Reference from pinterest.com "lettering guide for engineering drawings"
 https://www.pinterest.com/pin/344525440215378496/
 
 <img src="https://i.pinimg.com/originals/b7/54/2d/b7542dc5ce54bc89d28ca67f9254a89d.jpg">
-<hr>
-###Stokoe samples
-<img src="https://i.pinimg.com/736x/2a/1d/32/2a1d3205fb163d52b0323164e1f5a531.jpg">
-<img src="https://cultura-sorda.org/wp-content/uploads/2015/07/Diccionario_Stokoe_1965_Figura-1.png">
