@@ -3,6 +3,13 @@ Creating a font with fidelity to Stokoe's 1960, 1965 documentation.
 
 These letters look like they were made from an architectural tracing template.
 
+Update 2025-03-12: This typeface is actually Gorton (and probably some handdrawn alterations). Compare with "The hardest working font in Manhattan," https://aresluna.org/the-hardest-working-font-in-manhattan. It looks like Gorton was based on some earlier versions of the faces I added below. Versions of this font:
+- https://github.com/drdnar/GortonDigital
+- So need to figure out a way to use FontForge (https://fontforge.org/en-US) to make a version from these .sfd and .ff files
+- https://github.com/dse/routed-gothic
+- https://webonastick.com/fonts/routed-gothic
+
+<hr>
 Update 2021-02-26: This appears to be a typeface called Upright Gothic. Appears to have roots in 1910s? 1940s? 1960s? engineering architectural lettering templates with any combination of the words 'vertical' (vs. 'slanted') 'single-stroke' 'mechanical' 'single line' 'commercial' 'gothic' 'capitals'
 
 <hr>
